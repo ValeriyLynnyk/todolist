@@ -1,0 +1,27 @@
+{
+        "tasks": [
+            {
+                "description": "Comprar leche",
+                "completed": false
+            },
+            {
+                "description": "Bañarse",
+                "completed": false
+            },
+            {
+                "description": "Ayudar a ligar a mi amigo",
+                "completed": true
+            },
+            {
+                "description": "Dormir",
+                "completed": false
+            },
+            {
+                "description": "Comer IMPORTANTE!!!",
+                "completed": false
+            }
+        ]
+}
+
+        
+    
