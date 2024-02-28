@@ -10,12 +10,12 @@ const AddTask = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // pushear objeto con la información del input
-    //- todos.tasks.push({
-    //   description: task,
-    //   completed: false,
-    // });
-    // console.log(todos.tasks)
+    // Crear un objeto con la información del input
+    todos.tasks.push({
+      description: task,
+      completed: false,
+    });
+    console.log(todos.tasks)
 
     // Limpiar el valor del input
     setTask('');
@@ -29,7 +29,8 @@ const AddTask = () => {
     //   console.log('fasil guardado');
     // });
 
-    //guardar los cambios en el localstorage
+    //necesito guardar los cambios en el localstorage
+
     localStorage.setItem('todos', JSON.stringify(todos));
     
   };

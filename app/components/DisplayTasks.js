@@ -9,15 +9,8 @@ const DisplayTasks = () => {
 
     useEffect(() => {
         const checkForChanges = () => {
-            // const updatedTodos = require("../../data/todos.json");
-            // console.log('que es updatedtodos', updatedTodos.tasks)
-            
-            // if (JSON.stringify(tasks) !== JSON.stringify(updatedTodos.tasks)) {
-            //     setTasks(updatedTodos.tasks);
-            // }
-            //solo necesito que mires el localstorage
             const updatedTodos = JSON.parse(localStorage.getItem('todos'));
-            if (JSON.stringify(tasks) !== JSON.stringify(updatedTodos.tasks)) {
+            if (updatedTodos && JSON.stringify(tasks) !== JSON.stringify(updatedTodos.tasks)) {
                 setTasks(updatedTodos.tasks);
             }
         };
